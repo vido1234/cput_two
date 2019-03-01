@@ -10,8 +10,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import static org.junit.Assert.*;
-
 public class CheetahTest {
 
     Cheetah cheetah;
@@ -46,5 +44,37 @@ public class CheetahTest {
     public void getCollection() {
         Collection collection = cheetah.getCollection();
         Assert.assertEquals(cheetah.getCollection(),"");
+    }
+
+    @Test
+    public void getSound(){
+        String sound = cheetah.getSound();
+        Assert.assertEquals(cheetah.getSound(),sound);
+
+    }
+    @Test
+    public void hasWiskers(){
+        boolean wisker = cheetah.hasWiskers();
+        Assert.assertEquals(cheetah.hasWiskers(),wisker);
+    }
+    @Test
+    public void isBigCat(){
+        boolean bigCat = cheetah.isBigCat();
+        Assert.assertEquals(cheetah.isBigCat(),bigCat);
+    }
+    @Test
+    public void move(){
+        String move = cheetah.move();
+        Assert.assertEquals(cheetah.move(),move);
+    }
+    @Test
+    public void hasFourLegs(){
+        boolean hasFourLegs = cheetah.hasFourLegs();
+        Assert.assertEquals(cheetah.hasFourLegs(),hasFourLegs);
+    }
+    @Test
+    public void eat(){
+        String eat = cheetah.eat();
+        Assert.assertEquals(cheetah.eat(),eat);
     }
 }

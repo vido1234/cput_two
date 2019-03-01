@@ -2,7 +2,7 @@ package za.ac.pentec.cput_two;
 
 import java.util.*;
 
-public class Cheetah {
+public class Cheetah implements Cat{
 
     private String name;
 
@@ -47,6 +47,30 @@ public class Cheetah {
         collect.add("Flying Fish");
 
         return collect;
+    }
+
+    @Override
+    public String getSound(){
+        return "Prrr";
+
+    }
+    @Override
+    public boolean hasWiskers(){
+        return true;
+    }
+    @Override
+    public boolean isBigCat(){
+        return true;
+    }
+    @Override
+    public String move(){
+        return "Walk";
+    }
+    public boolean hasFourLegs(){
+        return true;
+    }
+    public String eat(){
+        return "Steak";
     }
 
 }
